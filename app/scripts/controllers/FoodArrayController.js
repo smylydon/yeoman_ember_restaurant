@@ -4,11 +4,11 @@ App.FoodController = Ember.ArrayController.extend({
 		addFood: function (food) {
 			var table = this.controllerFor('table').get('model'),
 				tabItems = table.get('tabs.tabItems');
-				console.log('food:',table);
-			tabItems.createRecord({
-				food: food,
+
+			tabItems.pushObject(this.store.createRecord('tabitem',{
+				foods: food,
 				cents: food.get('cents')
-			});
+			}));
 		}
 	}
 });

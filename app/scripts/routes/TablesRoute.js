@@ -3,7 +3,7 @@ App.TablesRoute = Ember.Route.extend({
 		return this.store.find('table');
 	}
 });
-
+/*
 App.TableRoute = Ember.Route.extend({
 	
 	model: function (params) {
@@ -11,3 +11,4 @@ App.TableRoute = Ember.Route.extend({
 	}
 	
 });
+*/
