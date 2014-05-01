@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "yeoman_ember_restuarant",
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
@@ -24,7 +24,7 @@
     "grunt-svgmin": "~0.1.0",
     "grunt-concurrent": "~0.1.0",
     "matchdep": "~0.1.1",
-    "grunt-ember-templates": "0.4.7",
+    "grunt-ember-templates": "0.4.20",
     "grunt-neuter": "0.5.0"
   },
   "engines": {

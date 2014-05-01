@@ -1,5 +1,5 @@
 App.IndexRoute = Ember.Route.extend({ 
 	redirect: function (){
-		this.transitionTo('tables')
+		this.transitionTo('tables');
 	}
 });

@@ -2,7 +2,7 @@
   {{#each controller}}
   <li>
     <a href="#" {{action "addFood" this}}>
-      <img {{ bindAttr src="imageUrl" }}>
+      <img {{ bind-attr src="image_url" }}>
       <p>{{ name }}</p>
     </a>
   </li>
