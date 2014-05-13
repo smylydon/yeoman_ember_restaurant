@@ -1,6 +1,4 @@
-/*global Ember */
-/*,
-    "foundation": "4.3.1" */
+
 var App = window.App = Ember.Application.create();
 
 /* Order and include as you please. */
