@@ -15,12 +15,12 @@ App.Table = DS.Model.extend({
 
 App.Tab = DS.Model.extend({
   tab: DS.attr('number'),
-  tabItems: DS.hasMany('tabitem', { async: true}),
+  tabitems: DS.hasMany('tabitem', { async: true}),
   cents: function() {
-    return this.get('tabItems').getEach('cents').reduce(function(accum, item) {
+    return this.get('tabitems').getEach('cents').reduce(function(accum, item) {
       return accum + item;
     }, 0);
-  }.property('tabItems.@each.cents')
+  }.property('tabitems.@each.cents')
 });
 
 App.Tabitem = DS.Model.extend({
